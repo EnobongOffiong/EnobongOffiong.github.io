@@ -79,9 +79,8 @@ h1 {
 }
 
 .resume-link{
-    text-decoration: none;
-    font-family: "Source Sans 3";
     
+    font-family: "Source Sans 3";   
 }
 
 @keyframes shake {
