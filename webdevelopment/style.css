@@ -79,8 +79,12 @@ h1 {
 }
 
 .resume-link{
-    
+    margin-left: 5px;
+    padding: 5px 10px;
     font-family: "Source Sans 3";   
+    border: 1.5px solid black;
+    background-color: #8A9B6E;
+    color: #f5f4ef;
 }
 
 @keyframes shake {
