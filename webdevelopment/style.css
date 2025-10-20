@@ -1,5 +1,5 @@
 
-h1 {
+h1, h2, h3 {
     color: #333333;
     font-size: 36px;
     font-family: "Inter" ;
@@ -10,6 +10,7 @@ h1 {
     font-size: 18px;
     font-family: "Source Sans 3";
   }
+
   body{
     margin: 0;
   }
@@ -87,6 +88,60 @@ h1 {
     color: #f5f4ef;
 }
 
+.reflection-header{
+    display: flex;
+    justify-content: center;
+}
+
+.reflection-section {
+    background-color: #f9f9f7;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.reflection-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 650px;
+    max-width: 100%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    line-height: 1.7;
+}
+
+.reflection-content p {
+    margin-bottom: 25px;
+    text-align: justify;
+    position: relative;
+    padding-left: 15px;
+    border-left: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.reflection-content p:nth-child(even) {
+    text-indent: 30px;
+}
+
+.reflection-content p:hover {
+    border-left-color: #8A9B6E;
+    background-color: rgba(138, 155, 110, 0.03);
+}
+
+.first-letter {
+    font-size: 35px;
+    font-style: italic;
+    color: #8A9B6E;
+    line-height: 1;
+    
+    font-weight: 600;
+}
+
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -94,5 +149,40 @@ h1 {
     30% { transform: translate(3px, 2px) rotate(0deg); }
    
   }
+
+  @media (max-width: 768px) {
+    .reflection-content {
+        width: 90%;
+        padding: 30px 20px;
+    }
+    
+    .reflection-content p {
+        font-size: 16px;
+    }
+    
+    .reflection-content p:nth-child(even) {
+        text-indent: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .reflection-content {
+        padding: 20px 15px;
+    }
+    
+    .reflection-content p {
+        font-size: 15px;
+    }
+    
+    .first-letter {
+        font-size: 30px;
+    }
+    
+
+    .reflection-content p:nth-child(even) {
+        text-indent: 15px;
+    }
+
+}
 
 
