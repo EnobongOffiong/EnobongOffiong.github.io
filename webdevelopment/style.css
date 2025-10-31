@@ -238,4 +238,45 @@ h1, h2, h3 {
 
 }
 
+/* Print Styles for about.html */
+@media print {
 
+    
+    body {
+      color: black;
+      font-family: "Times New Roman", serif;
+      background: white;
+      line-height: 1.4;
+      margin: 1in;
+    }
+
+
+    p{
+        font-size: 7.5pt; 
+    }
+
+    h3{
+        font-size: 10pt;
+    }
+
+    .list li{
+        padding: 0px;
+    }
+    
+  
+    
+    header, nav, img, video, .logo, .media-container, a {
+      display: none ;
+    }
+  
+   
+    main, footer, h1, p, ul, ol {
+      display: block ;
+    }
+  
+   
+    footer img, footer svg {
+      display: none ;
+    }
+}
+  
