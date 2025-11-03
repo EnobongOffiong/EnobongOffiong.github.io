@@ -195,6 +195,114 @@ h1, h2, h3 {
     height: 20px;
 }
 
+/********** FORM **********/
+.form-section {
+    padding: 40px 16px;
+    display: grid;
+    place-items: center;
+    background: #f9f9f7;
+  }
+  
+  .form-card {
+    width: min(820px, 100%);
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 24px;
+  }
+  
+  .form-card h3 {
+    margin-top: 0;
+    font-family: "Inter";
+    color: #333333;
+  }
+  
+  .form-row {
+    display: grid;
+    gap: 8px;
+    margin: 12px 0;
+  }
+  
+  .form-row label {
+    font-family: "Inter";
+    font-size: 0.95rem;
+    color: #333333;
+    font-weight: 600;
+  }
+  
+
+  .form-row input,
+  .form-row select,
+  .form-row textarea {
+    padding: 12px 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    background: #fff;
+    color: #333333;
+    font-family: "Source Sans 3";
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  
+  .form-row input::placeholder,
+  .form-row textarea::placeholder {
+    color: #8c8c8c;
+  }
+  
+  .form-row input:focus,
+  .form-row select:focus,
+  .form-row textarea:focus {
+    border-color: #8A9B6E;
+    box-shadow: 0 0 0 3px rgba(138,155,110,0.18);
+  }
+  
+  .hint {
+    font-family: "Source Sans 3";
+    font-size: 0.85rem;
+    color: #666666;
+  }
+  
+
+  .form-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  
+  .btn {
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid #dcdcdc;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Source Sans 3";
+    transition: background-color 0.15s ease, transform 0.08s ease;
+  }
+  
+  .btn.primary {
+    background: #8A9B6E;
+    color: #f5f4ef;
+    border-color: #8A9B6E;
+  }
+  
+  .btn.ghost {
+    background: transparent;
+    color: #333333;
+  }
+  
+  .btn:hover { transform: translateY(-1px); }
+  
+
+  .form-note {
+    margin-top: 6px;
+    color: #666666;
+    font-family: "Source Sans 3";
+    font-size: 0.9rem;
+  }
+
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }

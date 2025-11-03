@@ -1,0 +1,164 @@
+<!--
+  Name: Offiong Enobong
+  Date: September 11, 2025
+  Page: Offiongtemplate.html
+  Description: HTML boilerplate template for web projects
+-->
+
+<!DOCTYPE html>
+<!-- This is the main HTML5 document declaration -->
+<html lang="en">
+<!-- Root element with language attribute -->
+
+<head>
+    <!-- Character encoding for text rendering -->
+    <meta charset="utf-8">
+    
+    <!-- Viewport meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title that appears in browser tab -->
+    <title>Contact</title>
+    
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- Header section for logo and navigation -->
+    <header>
+        <div class="header-container">
+        <img src="logo.png" alt="Your Site Logo" class = "logo">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                    <ul class = "dropdown">
+                    <li><a href = "#">Project 1</a></li>
+                    <li><a href = "#">Project 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+       
+        
+    </header>
+    
+
+    <main>
+        <section class="form-section">
+          <div class="form-card" role="region" aria-labelledby="contact-title">
+            <h3 id="contact-title">Let’s get in touch</h3>
+            
+            <form id="contact-form" action="#" method="post" novalidate>
+            
+              <div class="form-row">
+                <label for="title">Title</label>
+                <select id="title" name="title" required>
+                  <option value="" disabled selected>Select your title</option>
+                  <option>Mr.</option>
+                  <option>Ms.</option>
+                  <option>Mrs.</option>
+                  <option>Dr.</option>
+                  <option>Prof.</option>
+                  <option>Mx.</option>
+                </select>
+                <small class="hint">Choose how you’d like to be addressed.</small>
+              </div>
+    
+             
+              <div class="form-row">
+                <label for="fullName">Full Name</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Enter your full name"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+    
+              
+              <div class="form-row">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+    
+             
+              <div class="form-row">
+                <label for="reason">Reason for Contact</label>
+                <select id="reason" name="reason" required>
+                  <option value="" disabled selected>Select a reason</option>
+                  <option>General Inquiry</option>
+                  <option>Project Collaboration</option>
+                  <option>Internship / Job Opportunity</option>
+                  <option>Speaking / Event</option>
+                  <option>Other</option>
+                </select>
+                <small class="hint">Helps me route your message quickly.</small>
+              </div>
+    
+             
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+    
+              
+              <div class="form-actions">
+                <button type="submit" class="btn primary">Submit</button>
+                <button type="reset" class="btn ghost">Reset</button>
+              </div>
+    
+              
+              <p class="form-note">All fields are required.</p>
+            </form>
+          </div>
+        </section>
+      </main>
+    
+
+    <footer>
+        <p>&copy; 2025 Enobong Offiong. All rights reserved.</p>
+    
+        <div class="contact-info">
+           
+            <p>
+                <img src="icons8-phone-50.png" alt="Phone icon" class="icon">
+                (573) 123-4567
+            </p>
+    
+          
+            <p>
+                <img src="icons8-email-50.png" alt="Email icon" class="icon">
+                edoffiong@gmail.com
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
