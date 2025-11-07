@@ -14,6 +14,7 @@ h1, h2, h3 {
   body{
     margin: 0;
   }
+
   .hero {
     background-color: #EDE8D0;
     color: #333333;
@@ -288,6 +289,10 @@ h1, h2, h3 {
     border-color: #8A9B6E;
   }
   
+  .copyright{
+   text-align: center;
+  }
+
   .btn.ghost {
     background: transparent;
     color: #333333;
@@ -301,6 +306,79 @@ h1, h2, h3 {
     color: #666666;
     font-family: "Source Sans 3";
     font-size: 0.9rem;
+  }
+
+  main{
+    
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    display: grid;                 
+    grid-template-columns: 1fr;    
+    gap: 2rem;
+  }
+  
+  
+  .media-container {
+    display: grid;                  
+    grid-template-columns: 1fr;     
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    align-items: start;
+  }
+  
+
+  .headshot-img {
+    width: 100%;
+    max-width: 380px;              
+    aspect-ratio: 1 / 1;            
+    object-fit: cover;
+    border: 2px solid #8A9B6E;
+    border-radius: 50px;
+    justify-self: center;           
+  }
+  
+ 
+  .video-container {
+    width: 100%;
+    max-width: 380px;               
+    justify-self: center;
+  }
+  
+ 
+  .intro-vid {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;            
+    object-fit: cover;
+    border: 2px solid #8A9B6E;
+    border-radius: 50px;
+  }
+  
+
+  @media (min-width: 700px){
+    .media-container{
+      grid-template-columns: 1fr 1fr;   
+      gap: 2rem;
+    }
+    .headshot-img, .video-container{
+      justify-self: start;             
+    }
+  }
+  
+
+  @media (min-width: 1000px){
+    main{
+      grid-template-columns: 1fr;       
+    }
+  }
+  
+  
+  @media (prefers-reduced-motion: reduce){
+    .list li { transition: none !important; }
+    .list li:hover { animation: none !important; }
   }
 
 @keyframes shake {
