@@ -133,9 +133,18 @@ nav{
     }
 }
 
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger:hover {
+    color: #8A9B6E;
+  }
 
 @media (max-width: 480px) {
     .nav-menu {
+        display: none;
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
@@ -144,5 +153,17 @@ nav{
     .nav-menu a {
         width: 100%;
         text-align: center;
+    }
+
+    .hamburger{
+        display: block;
+        font-size: 2em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    
+    }
+
+    .hamburger:active{
+        
     }
 }
