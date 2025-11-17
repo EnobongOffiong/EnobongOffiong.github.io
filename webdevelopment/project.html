@@ -1,0 +1,169 @@
+<!--
+  Name: Offiong Enobong
+  Date: September 11, 2025
+  Page: Offiongtemplate.html
+  Description: HTML boilerplate template for web projects
+-->
+
+<!DOCTYPE html>
+<!-- This is the main HTML5 document declaration -->
+<html lang="en">
+<!-- Root element with language attribute -->
+
+<head>
+    <!-- Character encoding for text rendering -->
+    <meta charset="utf-8">
+    
+    <!-- Viewport meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title that appears in browser tab -->
+    <title>Projects</title>
+    
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- Header section for logo and navigation -->
+    <header>
+        <div class="header-container">
+        <img src="logo.png" alt="Your Site Logo" class = "logo">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                    <ul class = "dropdown">
+                        <li><a href="#mizzou-scheduler">Mizzou Scheduler</a></li>
+                        <li><a href="#quizzical">Quizzical App</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p class= "hamburger">☰</p>
+    </div>
+        
+    </header>
+    
+    <!-- Main content area -->
+    <main>
+        <section class="projects-hero">
+            <h1>My Projects & Experience</h1>
+            <p>Showcasing my journey in computer science through practical projects and real-world applications</p>
+        </section>
+
+        <!-- Projects Section -->
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>Real-world applications built with modern technologies</p>
+        </div>
+
+        <div class="projects-container">
+            <!-- Project 1: Mizzou Final Exam Scheduler -->
+            <article class="project-card" id="mizzou-scheduler">
+                <div class="project-image">
+                    <img src="scheduler.png" alt="Mizzou Final Exam Scheduler">
+                </div>
+                <div class="project-content">
+                    <h3>Mizzou Final Exam Scheduler</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">GitHub Actions</span>
+                    </div>
+                    <p><strong>Description:</strong> I created a scalable full-stack application that automated exam date retrieval for over 1,000 students, eliminating their need for manual website searches. The system features a React frontend and a Node.js backend with a dedicated AWS database, which together serve exam schedules through a RESTful API, reducing lookup time by 50%. I automated testing and deployment with GitHub Actions CI/CD, which enhanced release reliability and reduced manual maintenance. This project successfully delivered a reliable and efficient tool that significantly improved student experience.</p>
+                    
+                    <div class="reflection-section">
+                        <h4>Project Reflection</h4>
+                        <p>"This project really showed me why you shouldn't just jump into coding. Taking the time to plan the backend with diagrams saved me from a ton of problems later on. I got way better at using Express to set up API routes and, honestly, finally figured out how to properly manage database connections without everything crashing. The biggest struggle was making sure the app wouldn't slow down with more users, but getting it to work on AWS was a huge win. It felt pretty awesome knowing something I built actually made a difference for so many students."</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2: Quizzical -->
+            <div class="project-card" id="quizzical">
+                <div class="project-image">
+                    <img src="quizzical.png" alt="Quizzical Quiz App">
+                </div>
+                <div class="project-content">
+                    <h3>Quizzical</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">API Integration</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                    <p><strong>Description:</strong> Quizzical is a dynamic and engaging quiz web app I built using React.js. It fetches a diverse set of questions from the Open Trivia Database API to provide a unique experience every time. The app features a clean, responsive interface designed with CSS, ensuring it works seamlessly on both desktop and mobile devices. I focused on optimizing performance and user experience by efficiently managing state and side effects with React hooks which minimized unnecessary re-renders and created a smooth, interactive flow from start to finish.</p>
+                    
+                    <div class="reflection-section">
+                        <h4>Project Reflection</h4>
+                        <p>"This project was my deep dive into really understanding React. I learned that managing state properly is everything - using useState and useEffect the right way totally changed how smooth the app felt. The biggest challenge was figuring out how to structure the API calls and then manage the flow of data without the UI freezing up. It was satisfying to finally get the play again button to work correctly at the end. Seeing it all come together into something that's actually fun to use made all the debugging worth it."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Technologies and tools I've worked with</p>
+            </div>
+            <div class="skills-container">
+                <span class="skill-item">HTML5</span>
+                <span class="skill-item">CSS3</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">React</span>
+                <span class="skill-item">Node.js</span>
+                <span class="skill-item">Express</span>
+                <span class="skill-item">Java</span>
+                <span class="skill-item">C</span>
+                <span class="skill-item">AWS</span>
+                <span class="skill-item">REST APIs</span>
+                <span class="skill-item">Git</span>
+                <span class="skill-item">GitHub Actions</span>
+                <span class="skill-item">Responsive Design</span>
+                <span class="skill-item">CI/CD</span>
+                <span class="skill-item">Database Design</span>
+                <span class="skill-item">Database Design</span>
+                <span class="skill-item">API Integration</span>
+            </div>
+        </section>
+
+
+    </main>
+    
+
+    <footer>
+        <p class = "copyright">&copy; 2025 Enobong Offiong. All rights reserved.</p>
+    
+        <div class="contact-info">
+           
+            <p>
+                <img src="icons8-phone-50.png" alt="Phone icon" class="icon">
+                (573) 123-4567
+            </p>
+    
+          
+            <p>
+                <img src="icons8-email-50.png" alt="Email icon" class="icon">
+                edoffiong@gmail.com
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
