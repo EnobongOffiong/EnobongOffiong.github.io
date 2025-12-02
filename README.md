@@ -1,2 +1,2 @@
 # EnobongOffiong.github.io
-Web Dev URL Assignment
+Web Dev Class
