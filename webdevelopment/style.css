@@ -3,8 +3,9 @@ h1, h2, h3 {
     color: #333333;
     font-size: 36px;
     font-family: "Inter" ;
-  }
+}
   
+
   p {
     color: #333333;
     font-size: 18px;
@@ -25,6 +26,31 @@ h1, h2, h3 {
     display: flex; 
     align-items: center; 
     justify-content: center;
+  }
+
+  /* Custom styles for all <h1 or h2> elements */
+  h1 {
+    /* Text shadow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    
+    
+    letter-spacing: 0.03em;
+    
+    /*underline decoration */
+    text-decoration: underline;
+    text-decoration-color: #4a6fa5;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    
+    
+    font-weight: 600;
+    color: #2d3748;
+}
+
+/*Different style for h2*/
+h2 {
+    text-decoration-color: #718096;
+    font-weight: 500;
 }
 
 .hero-content {
@@ -380,6 +406,11 @@ h1, h2, h3 {
     border-radius: 50px;
   }
   
+  /* Custom font from Google Fonts applied to site */
+  .project-header{
+     font-family: "Bitcount Prop Single";
+     
+  }
   .projects-hero {
     background-color: #EDE8D0;
     color: #333333;
